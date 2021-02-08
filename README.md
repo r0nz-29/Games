@@ -1,2 +1,2 @@
 # Games
-Noob level games, made in C
+Noob level games, written in C
