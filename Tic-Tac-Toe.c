@@ -146,9 +146,24 @@ void checkCondition(){
     }
 
     else {
+      /*BOOL isDraw = TRUE;
+      for(int i=0; i<3; i++){
+        for(int j=0; j<3; j++){
+          if (table[i][j]>='1' && table[i][j]<='9'){
+            isDraw = FALSE;
+          }
+        }
+      }
+      if (isDraw){
         system("clear");
         printTable(table);
+        printf("It's a Draw\n");
+      } else {*/
+        system("clear");
+        printTable(table);
+      
     }
+
   }
 }
 
@@ -170,10 +185,13 @@ void checkDraw () {
         system("clear");
         printTable(table);
       }
+
 }
 
 int main() {
   int block;
+//  setup(table);
+  
   do {
    
     count%2==0 ? strcpy(player, "Player 1") : strcpy(player, "Player 2");
