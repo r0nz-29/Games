@@ -10,6 +10,7 @@ int main(){
   int usr_num;
   int tries=1;
   printf("Your computer just thought of a number b/w 1 and 10(inclusive ofc),\n");
+  srand(time(NULL));
   do{
   comp_num = rand()%(UPPER-LOWER+1)+LOWER;//comp decides a num
   printf("Guess the number: \n ");
